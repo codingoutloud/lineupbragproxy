@@ -8,6 +8,7 @@
       $(function () {
         var extractToken = function(hash) {
           var match = hash.match(/access_token=(\w+)/);
+          console.log('match = ' + match);
           return !!match && match[1];
         };
  
@@ -21,6 +22,7 @@
         });
  
         var token = extractToken(document.location.hash);
+console.log('finished extractToken');
         if (token && JSON.parse(localStorage.doUpload)) {
           localStorage.doUpload = false;
           $post.hide();
