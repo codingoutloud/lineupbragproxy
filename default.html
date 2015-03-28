@@ -46,6 +46,9 @@
             success: function(result) {
               var id = result.data.id;
               window.location = 'https://imgur.com/gallery/' + id;
+              alert('1: ' + 'https://imgur.com/gallery/' + id);
+              alert('2: ' + result.data.link);
+              alert('3: ' + data.data.link);
             }
           });
         }
