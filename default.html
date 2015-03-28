@@ -19,10 +19,12 @@
         $post.click(function() {
           localStorage.doUpload = true;
           localStorage.imageBase64 = $img.attr('src').replace(/.*,/, '');
+          console.log('base64 = ');
+          console.log(localStore.imageBase64);
         });
  
         var token = extractToken(document.location.hash);
-console.log('finished extractToken');
+        console.log('finished extractToken');
         if (token && JSON.parse(localStorage.doUpload)) {
           localStorage.doUpload = false;
           $post.hide();
