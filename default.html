@@ -47,11 +47,12 @@
               var id = result.data.id;
               // window.location = 'https://imgur.com/gallery/' + id;
               var imageUrl = result.data.link;
-              alert('1: ' + 'https://imgur.com/gallery/' + id);
-              alert('2: ' + imageUrl);
+              //alert('1: ' + 'https://imgur.com/gallery/' + id);
+              //alert('2: ' + imageUrl);
               var twitterIntentUrl = 'https://twitter.com/intent/tweet?text=My baseball lineup from @DraftKings&url=' + encodeURIComponent(imageUrl);
-              alert('3: ' + twitterIntentUrl);
-              window.location = twitterIntentUrl;
+              var facebookIntentUrl = ''; // https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cnn.com%2F&t=CNN%26s+website%27
+              //alert('3: ' + twitterIntentUrl);
+      //        window.location = twitterIntentUrl;
               //window.location = imageUrl;
             }
           });
