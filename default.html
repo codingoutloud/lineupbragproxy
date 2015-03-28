@@ -45,7 +45,7 @@
             },
             success: function(result) {
               var id = result.data.id;
-              window.location = 'https://imgur.com/gallery/' + id;
+              // window.location = 'https://imgur.com/gallery/' + id;
               alert('1: ' + 'https://imgur.com/gallery/' + id);
               alert('2: ' + result.data.link);
               alert('3: ' + data.data.link);
@@ -73,8 +73,10 @@
       <p>Posting to imgur...</p>
     </div>
 
-  <a href="https://codingoutloud.imgur.com/all/">imgur</a>
-  <a href="https://gist.github.com/eirikb/7404666">sample code source</a>
+  <ul>
+  <li><a href="https://codingoutloud.imgur.com/all/">imgur</a></li>
+  <li><a href="https://gist.github.com/eirikb/7404666">sample code source</a></li>
+  </ul>
   </body>
 </html>
 
