@@ -20,7 +20,7 @@
           localStorage.doUpload = true;
           localStorage.imageBase64 = $img.attr('src').replace(/.*,/, '');
           console.log('base64 = ');
-          console.log(localStore.imageBase64);
+          console.log(localStorage.imageBase64);
         });
  
         var token = extractToken(document.location.hash);
