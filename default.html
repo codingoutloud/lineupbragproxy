@@ -21,6 +21,8 @@
           localStorage.imageBase64 = $img.attr('src').replace(/.*,/, '');
           console.log('base64 = ');
           console.log(localStorage.imageBase64);
+          console.log('pre-base64-src = ');
+          console.log($img.attr('src'));
         });
  
         var token = extractToken(document.location.hash);
